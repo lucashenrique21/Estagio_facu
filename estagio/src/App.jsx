@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link, Navigate } from 'react-router-dom';
 import './App.css';
 import Register from './Register';
-import MainPage from './MainPage'; // Importa a nova página
+import MainPage from './MainPage'; 
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false); // Estado para controle de login
