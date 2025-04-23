@@ -1,14 +1,17 @@
 import React from 'react';
-import './App.css'; // Certifique-se de que o CSS é importado
+import Header from './Header';
 
-const MainPage = () => {
-  return (
-    <div className="main-container">
-      <h1>Página Principal</h1>
-      <p>Bem-vindo à sua página principal!</p>
-      {/* Você pode adicionar mais conteúdo aqui */}
-    </div>
-  );
+const MainPage = ({ onLogout }) => {
+    return (
+        <div>
+            <Header onLogout={onLogout} />
+            <div className="main-container">
+                <h1>Página Principal</h1>
+                <p>Bem-vindo à sua página principal!</p>
+                {/* Você pode adicionar mais conteúdo aqui */}
+            </div>
+        </div>
+    );
 };
 
-export default MainPage; // Certifique-se de que a exportação padrão está presente
+export default MainPage;
