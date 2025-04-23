@@ -30,8 +30,8 @@ const Login = ({ onLogin }) => {
       <h1>Login</h1>
       <form className="login-form" onSubmit={onLogin}> {/* Chama a função de login ao enviar */}
         <div className="form-group">
-          <label htmlFor="username">Usuário</label>
-          <input type="text" id="username" placeholder="Digite seu usuário" required />
+          <label htmlFor="username">E-mail</label>
+          <input type="text" id="username" placeholder="Digite seu e-mail" required />
         </div>
         <div className="form-group">
           <label htmlFor="password">Senha</label>
